@@ -17,13 +17,11 @@ var location_services = new (require('./location_services.js'))();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 //app.use(cookieParser());
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/location',location_services.get_router(express));
+//app.use('/location',location_services.get_router(express));
 app.get('/', function(req,res, next){
-  app.thing = req;
-
-  res.send('yo');
+  res.sendFile('views/main.html',{root: path.join(__dirname)});
 });
 
 
