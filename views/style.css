@@ -1,0 +1,106 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  overflow: hidden;
+  
+}
+
+#background{
+	height: 100%;
+	width: 100%;
+}
+
+.presentation_page{
+	background-color: white;
+	position: absolute;
+	padding: 0px;
+	margin-top: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border: 2px white dotted;
+	box-shadow:  10px 10px 10px 10px black;
+	height: 100%;
+	width: 90%;
+	opacity: 0.85;
+	overflow: hidden;
+	
+}
+
+.project_container{
+
+	position: relative;
+	width: 1000px;
+	height: 1000px;
+}
+
+#automate_in_progress{
+	
+	background-color: red;
+	width: 120%;
+	height: 20%;
+	margin-top: 20%;
+	transform: rotate(20deg);	
+	box-shadow:  2px 0px 20px 2px black;
+	border: 3px dotted black;
+
+}
+
+#automate_text{
+	color: white;
+	font-size: 250%;
+	text-shadow: 2px 1px 2 #000;
+	
+}
+
+.project{
+	position: relative;
+	margin: 5%;
+	width: 10%;
+	height: 10%;
+	background-color: white;
+	box-shadow:  0px 5px 5px 5px grey;
+	border-radius: 50%;
+}
+
+#the_background{
+	position: fixed;
+	top: -10%;
+	left: -15%;
+	width: 140%;
+	height: 140%;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fb/Seattle_Columbia_Pano2.jpg");
+	background-size: cover;
+	z-index: 0;
+	animation-name: move_background;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+
+
+}
+
+@keyframes move_background{
+	0%{
+
+		transform: translate3d(-10%,-15%,0px);
+		animation-timing-function: ease-in;
+	}
+	
+	50%{
+		transform: translate3d(10%,10%,0px);
+		animation-timing-function: ease-out;
+		
+	}
+	
+	100%{
+
+		transform: translate3d(-10%,-15%,0px);
+		animation-timing-function: ease-in;
+	}
+	
+	
+}
+
+p{
+	
+}

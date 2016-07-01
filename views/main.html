@@ -10,66 +10,71 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></scr‌​ipt>
+
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="javascripts/website_scripts.js"></script>
+    <script src="website_scripts.js"></script>
+
+	
 </head>
 
 <body>
 <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    ...
-    <ul class="nav navbar-nav">
-        <li><a href="#section1" onclick="switch_pages('#section1','.presentation_page')">Section 1</a></li>
-        <li><a href="#section2" onclick="switch_pages('#section2','.presentation_page')">Automate</a> </li>
-        <li><a href="#section3" onclick="switch_pages('#section3','.presentation_page')">Projects</a> </li>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<ul class="nav navbar-nav">
+			<li><a href="#section1" onclick="switch_pages('#section1','.presentation_page')">Section 1</a></li>
+			<li><a href="#section2" onclick="switch_pages('#section2','.presentation_page')">Automate</a> </li>
+			<li><a href="#section3" onclick="switch_pages('#section3','.presentation_page')">Projects</a> </li>
+		</ul>
+	</nav>
 
-    </ul>
-    ...
-</nav>
+	<div id = "the_background"></div>
+	
+		<div id = "section1" class="presentation_page"  hidden="hidden">
+			<h1>Welcome to my portfolio site!</h1>
+			<img id= "background" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Seattle_Columbia_Pano2.jpg">
+		</div>
 
-
-<div id = "section1" class="presentation_page">
-    <div class="jumbotron">
-        <h1>Welcome to my portfolio site!</h1>
-        <p>Hi there.  This is a work in progress site intended to show off some of the things I've worked on.
-            Click around.  You should really check out my automate.js page. That's really cool. You might also want
-            to check out my portfolio stuff for projects I've worked in the past.  I'm currently in the prcess o
-        </p>
-        <img id= "background"  src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Seattle_Columbia_Pano2.jpg">
-    </div>
-</div>
-
-
-<div id = "section2" class="presentation_page"  hidden="hidden">
-    <div class="jumbotron">
-        <h1>The below are some of the projects I've worked on.</h1>
-        <p>The following are some of the things I've worked on!
-        </p>
-    </div>
-    <p>This is some text.</p>
-    <p>Tdfksdkfjsxt.</p>
-</div>
-
-<div id = "section3" class="presentation_page" hidden="hidden">
-    <div class="jumbotron">
-        <h1>The below are some of the projects I've worked on.</h1>
-        <p>The following are some of the things I've worked</p>
-    </div>
-    <p>This is some text.</p>
-
-</div>
+		<div id = "section2" class="presentation_page" hidden="hidden">
+			<h1>The below are some of the projects I've worked on.</h1>
+			<p>The following are some of the things I've worked</p>
+			
+				
+			<div id="automate_in_progress">
+				<p id="automate_text">automate.js is currently being developed, check back soon</p>
+			</div>
+			
+			
+			</div>
+			
+		</div>
+	
 
 
-<button onclick="change_page"> </button>
-<hr>
+		<div id = "section3" class="presentation_page" hidden="hidden">
+			<h1>The below are some of the projects I've worked on.</h1>
+			<p>The following are some of the things I've worked</p>
+			
+			<div class = "project_container">
+			
+			
+			<div class= "project"></div>
+			<div class= "project">example 0</div>
+			<div class= "project">example 0</div>
+			<div class= "project">example 0</div>
+			<div class= "project">example 0</div>
+			<div class= "project">example 0</div>
+			<div class= "project">example 0</div>
+			</div>
+			
+		</div>
 
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-    ...
-    <ul class="nav navbar-nav">
-    </ul>
-    ...
-</nav>
+	
+
+	<nav class="navbar navbar-inverse navbar-fixed-bottom"></nav>
+
 </body>
 
 </html>
